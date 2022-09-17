@@ -1,0 +1,10 @@
+#root {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0px;
+}
+
+.greeting {
+  background: transparent linear-gradient(102deg, #2733C4 0%, #9F19D1 100%) 0% 0% no-repeat padding-box;
+  border-radius: 16px;
+}
