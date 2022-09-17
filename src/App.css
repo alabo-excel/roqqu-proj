@@ -8,3 +8,25 @@
   background: transparent linear-gradient(102deg, #2733C4 0%, #9F19D1 100%) 0% 0% no-repeat padding-box;
   border-radius: 16px;
 }
+
+@font-face{
+  font-family: gilory;
+  src: url(./assets/fonts/Gilroy-FREE/Gilroy-ExtraBold.otf)
+}
+
+.title{
+  font-family: 'gilory';
+}
+
+@font-face{
+  font-family: avenir;
+  src: url(./assets/fonts/Avenir-Font/AvenirLTStd-Roman.otf)
+}
+@font-face{
+  font-family: avenir-book;
+  src: url(./assets/fonts/Avenir-Font/AvenirLTStd-Book.otf)
+}
+
+div{
+  font-family: "avenir-book";
+}

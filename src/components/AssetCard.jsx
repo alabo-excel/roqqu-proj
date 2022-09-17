@@ -1,10 +1,9 @@
 import React from 'react';
 
 const AssetCard = (props) => {
-    console.log(props)
     return (
-        <div className="bg-[#080F24] my-3">
-            <div className="flex justify-between w-[360px] px-5 p-3">
+        <div className="bg-[#080F24] my-3  w-[48%]">
+            <div className="flex justify-between px-5 p-3">
                 <div className="flex">
                     <img src={props.img} className="mx-2" alt="" />
                     <div className="my-auto">

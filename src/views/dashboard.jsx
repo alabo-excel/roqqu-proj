@@ -6,6 +6,7 @@ import btc from "../assets/images/btc.svg"
 import tet from "../assets/images/tet.svg"
 import eth from "../assets/images/eth.svg"
 import bin from "../assets/images/bin.svg"
+import ActivitiesCard from "../components/ActivitiesCard"
 
 const dashboard = () => {
     const assets = [
@@ -38,6 +39,13 @@ const dashboard = () => {
             abbr: "BNB",
         },
     ]
+    const activities = [{
+        title: "Withdrew USDT"
+    }, {
+        title: "Exchanged BTC"
+    }, {
+        title: "Deposit ETH"
+    }]
     return (
         <div className="p-8">
             <div className="flex justify-between">
@@ -55,12 +63,12 @@ const dashboard = () => {
                         </div>
                     </div>
                     <div className="flex flex-wrap justify-between w-[90%]">
-                        {assets.map((asset) => (
-                            <AssetCard img={asset.img} title={asset.title} price={asset.price} abbr={asset.abbr} rate={asset.rate} />
+                        {assets.map((asset, i) => (
+                            <AssetCard key={i} img={asset.img} title={asset.title} price={asset.price} abbr={asset.abbr} rate={asset.rate} />
                         ))}
                     </div>
                 </div>
-                <div className="bg-[#080F24] w-[27%] p-2">
+                <div className="bg-[#080F24] w-[27%] p-3">
                     <div className="bg-[#04091C] p-3 rounded-sm">
                         <div className="text-sm">WALLET BALANCE</div>
                         <div className=" text-center">
@@ -72,6 +80,11 @@ const dashboard = () => {
                     </div>
                     <div className="font-bold text-base mt-8 mb-4">
                         Latest Activities
+                    </div>
+                    <div>
+                        {activities.map((a) => (
+                            <ActivitiesCard activities={a.title} />
+                        ))}
                     </div>
                 </div>
             </div>
