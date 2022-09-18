@@ -13,10 +13,10 @@ function App() {
     <div className="App text-white bg-[#020717]">
       <Header />
       <div className="flex w-full">
-        <div className="">
+        <div className=" w-[5%]">
           <Sidebar />
         </div>
-        <div className="w-full">
+        <div className="w-full mt-20">
           <Routes>
             <Route path="/" element={<Dashboard />} />
             <Route path="trade" element={<Trade />} />

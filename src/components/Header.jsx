@@ -5,8 +5,8 @@ import { Link } from "react-router-dom";
 
 const Header = () => {
     return (
-        <div className='header bg-[#080F24]'>
-            <div className='flex justify-between mx-8 p-5'>
+        <div className='header bg-[#080F24] fixed w-full z-50'>
+            <div className='flex justify-between mx-8 p-7'>
                 <div>
                     <Link to="/">
                         <img className="w-32" src={image} alt="" />

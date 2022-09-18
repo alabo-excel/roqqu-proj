@@ -6,13 +6,18 @@ import Pulse from '../assets/images/Pulse.svg'
 import Settings from '../assets/images/Settings-alt.svg'
 import Wallet from '../assets/images/Wallet.svg'
 import Chart from '../assets/images/noun_chart.svg'
+import Dashboard from '../assets/images/dashboard.svg'
 import { Link } from "react-router-dom";
 
 
 const Sidebar = () => {
     return (
-        <div className="p-5 bg-[#080F24] h-full">
-
+        <div className="p-5 fixed top-[65px] bg-[#080F24] h-full">
+            <div className="my-8">
+                <Link to="/">
+                    <img className="w-7" src={Dashboard} alt="" />
+                </Link>
+            </div>
             <div className="my-8">
                 <Link to="/trade">
                     <img src={Chart} alt="" />
