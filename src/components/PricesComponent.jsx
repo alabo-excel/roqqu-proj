@@ -4,7 +4,7 @@ import btc from "../assets/images/btc.svg"
 const PricesComponent = () => {
     return (
         <div>
-            <div className="flex bg-[#0D152E] justify-evenly rounded-md fixed w-[91%] z-50">
+            <div className="flex bg-[#0D152E] justify-evenly rounded-md fixed w-[91%] z-40">
                 <div className="flex border-r border-[#91A0CE27] pr-10 p-4">
                     <img src={btc} alt="" />
                     <div className="ml-3 my-auto">
