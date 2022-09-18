@@ -13,7 +13,6 @@ const Chart = () => {
                 timezone="Etc/UTC"
                 style="1"
                 toolbar_bg="#f1f3f6"
-                hide_top_toolbar="true"
                 hide_legend="true"
                 save_image="false"
                 container_id="tradingview_b0864"

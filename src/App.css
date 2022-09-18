@@ -39,7 +39,3 @@ div {
 .sidebar:hover .nav {
   display: block
 }
-
-.is-active {
-  background-color: red;
-}
