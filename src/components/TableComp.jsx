@@ -6,9 +6,11 @@ const TableComp = () => {
             <div className="bg-[#04091C] text-xs">
                 <table className="w-full">
                     <thead className="text-[#E4E4FA91] ">
-                        <td className="p-2">PRICE(USDT)</td>
-                        <td className="p-2">AMOUNT(BTC)</td>
-                        <td className="p-2">TOTAL (USDT)</td>
+                        <tr>
+                            <td className="p-2">PRICE(USDT)</td>
+                            <td className="p-2">AMOUNT(BTC)</td>
+                            <td className="p-2">TOTAL (USDT)</td>
+                        </tr>
                     </thead>
                     <tbody>
                         <tr>
@@ -109,9 +111,11 @@ const TableComp = () => {
 export default TableComp; <div className="bg-[#04091C] text-xs">
     <table className="w-full">
         <thead className="text-[#E4E4FA91] ">
-            <td className="p-2">PRICE(USDT)</td>
-            <td className="p-2">AMOUNT(BTC)</td>
-            <td className="p-2">TOTAL (USDT)</td>
+            <tr>
+                <td className="p-2">PRICE(USDT)</td>
+                <td className="p-2">AMOUNT(BTC)</td>
+                <td className="p-2">TOTAL (USDT)</td>
+            </tr>
         </thead>
         <tbody>
             <tr>

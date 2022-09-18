@@ -82,14 +82,16 @@ const trade = () => {
                         <div className="bg-[#04091C]  text-sm m-2">
                             <table className="w-full">
                                 <thead className="uppercase text-[#E4E4FA91]">
-                                    <td className="p-3">time</td>
-                                    <td className="p-3">price(usdt)</td>
-                                    <td className="p-3">amount(btc)</td>
-                                    <td className="p-3">total usdt</td>
+                                    <tr>
+                                        <td className="p-3">time</td>
+                                        <td className="p-3">price(usdt)</td>
+                                        <td className="p-3">amount(btc)</td>
+                                        <td className="p-3">total usdt</td>
+                                    </tr>
                                 </thead>
                                 <tbody className="text-xs">
-                                    {trades.map((trade) => (
-                                        <tr>
+                                    {trades.map((trade, i) => (
+                                        <tr key={i}>
                                             <td className="p-3"> {trade.time}</td>
                                             <td className="p-3"> {trade.percent}</td>
                                             <td className="p-3"> {trade.amount}</td>

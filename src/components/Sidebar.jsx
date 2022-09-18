@@ -14,7 +14,7 @@ const Sidebar = () => {
     return (
         <div className="p-5 fixed top-[65px] bg-[#080F24] h-full sidebar hover:w-52 text-[#E4E4FA91] z-50">
             <div className="my-8">
-                <NavLink exact activeClassName='is-active' to="/">
+                <NavLink to="/">
                     <div className="flex">
                         <img className="w-6" src={Dashboard} alt="" />
                         <div className="my-auto pl-8 nav">Home</div>
@@ -22,7 +22,7 @@ const Sidebar = () => {
                 </NavLink>
             </div>
             <div className="my-8">
-                <NavLink activeClassName='is-active' to="/trade">
+                <NavLink  to="/trade">
                     <div className="flex">
                         <img src={Chart} alt="" />
                         <div className="my-auto pl-8 nav">Exchange</div>
